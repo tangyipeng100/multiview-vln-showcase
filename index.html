@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="多目纯视觉视觉语言导航展示" />
+    <title>PureVision VLN | 多目纯视觉导航</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="PureVision VLN">
+        <span class="brand-mark">PV</span>
+        <span>PUREVISION VLN</span>
+      </a>
+      <nav aria-label="Page navigation">
+        <a href="#approach" data-zh="方案" data-en="Approach">方案</a>
+        <a href="#showcase" data-zh="视频" data-en="Videos">视频</a>
+        <a href="#updates" data-zh="更新" data-en="Updates">更新</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Language">
+        <button class="active" type="button" data-language="zh">中文</button>
+        <button type="button" data-language="en">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="top" class="hero">
+        <video autoplay muted loop playsinline preload="auto" aria-label="跨区域通行演示">
+          <source src="media/cross-area-livingroom-kitchen.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">MULTI-VIEW · PURE VISION · VLN</p>
+          <h1 data-zh="看见环境，理解指令，完成行动" data-en="See the scene. Understand the instruction. Act.">看见环境，理解指令，完成行动</h1>
+          <p class="hero-lead" data-zh="面向真实空间的多目纯视觉语言导航" data-en="Multi-view pure-vision language navigation for real spaces">面向真实空间的多目纯视觉语言导航</p>
+          <a class="hero-action" href="#showcase" data-zh="观看演示" data-en="Watch demos">观看演示</a>
+        </div>
+        <div class="hero-index" aria-label="Highlights">
+          <span data-zh="跨区域通行" data-en="Cross-area navigation">跨区域通行</span>
+          <span data-zh="语义目标寻找" data-en="Semantic object search">语义目标寻找</span>
+          <span data-zh="复杂结构通过" data-en="Structured passage">复杂结构通过</span>
+        </div>
+      </section>
+
+      <section id="approach" class="section approach">
+        <div class="section-head">
+          <p class="section-index">01 / APPROACH</p>
+          <h2 data-zh="少量场景数据，建立可迁移的视觉理解" data-en="Learning transferable visual understanding from limited scene data">少量场景数据，建立可迁移的视觉理解</h2>
+        </div>
+        <div class="approach-copy">
+          <p data-zh="通过少量场景级示范数据进行适配，系统即可学习空间关系、语言目标与连续行动之间的对应，在新指令与相近环境中展现实用的理解与迁移能力。" data-en="With a small set of scene-level demonstrations, the system can align spatial context, language goals, and continuous actions, showing practical generalization to new instructions and related environments.">通过少量场景级示范数据进行适配，系统即可学习空间关系、语言目标与连续行动之间的对应，在新指令与相近环境中展现实用的理解与迁移能力。</p>
+          <p data-zh="输入来自多目纯视觉观测与自然语言指令。模型从整体场景中理解任务，不依赖为每一种目标单独设计的识别流程。" data-en="The system works from multi-view visual observations and natural-language instructions. It interprets each task in the context of the full scene, without requiring a separate recognition pipeline for every target type.">输入来自多目纯视觉观测与自然语言指令。模型从整体场景中理解任务，不依赖为每一种目标单独设计的识别流程。</p>
+        </div>
+        <div class="capability-ledger">
+          <article>
+            <span>01</span>
+            <h3 data-zh="跨区域通行" data-en="Cross-area navigation">跨区域通行</h3>
+            <p data-zh="在连续室内空间中理解方向、通道与区域关系。" data-en="Understanding directions, passages, and spatial relationships across connected indoor areas.">在连续室内空间中理解方向、通道与区域关系。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-zh="语义目标寻找" data-en="Semantic object search">语义目标寻找</h3>
+            <p data-zh="根据自然语言目标，在视觉环境中完成寻找与接近。" data-en="Finding and approaching a target described through natural language.">根据自然语言目标，在视觉环境中完成寻找与接近。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-zh="结构化通行" data-en="Structured passage">结构化通行</h3>
+            <p data-zh="面向闸机等狭窄结构进行视觉判断与连续行动。" data-en="Using visual context to move through narrow structures such as access gates.">面向闸机等狭窄结构进行视觉判断与连续行动。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="showcase" class="section showcase">
+        <div class="section-head section-head-light">
+          <p class="section-index">02 / VIDEO SHOWCASE</p>
+          <h2 data-zh="当前演示" data-en="Current demonstrations">当前演示</h2>
+          <p data-zh="每段视频均来自当前阶段的真实任务测试。点击播放，后续内容会持续补充。" data-en="Each clip comes from a current task evaluation. Play any video below; more scenarios will be added over time.">每段视频均来自当前阶段的真实任务测试。点击播放，后续内容会持续补充。</p>
+        </div>
+
+        <div class="feature-video">
+          <video controls muted playsinline preload="metadata">
+            <source src="media/cross-area-livingroom-kitchen.mp4" type="video/mp4" />
+          </video>
+          <div>
+            <p class="video-type">CROSS-AREA NAVIGATION</p>
+            <h3 data-zh="从客厅到厨房" data-en="Living room to kitchen">从客厅到厨房</h3>
+            <p data-zh="根据语言指令跨越不同功能区域，保持对整体空间结构的连续理解。" data-en="Following a language instruction across functional areas while maintaining a continuous understanding of the scene.">根据语言指令跨越不同功能区域，保持对整体空间结构的连续理解。</p>
+          </div>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card">
+            <video controls muted playsinline preload="metadata"><source src="media/find-bed.mp4" type="video/mp4" /></video>
+            <div><p>OBJECT SEARCH 01</p><h3 data-zh="寻找床" data-en="Find the bed">寻找床</h3></div>
+          </article>
+          <article class="video-card">
+            <video controls muted playsinline preload="metadata"><source src="media/find-wardrobe.mp4" type="video/mp4" /></video>
+            <div><p>OBJECT SEARCH 02</p><h3 data-zh="寻找木制衣柜" data-en="Find the wooden wardrobe">寻找木制衣柜</h3></div>
+          </article>
+          <article class="video-card">
+            <video controls muted playsinline preload="metadata"><source src="media/find-water-dispenser-01.mp4" type="video/mp4" /></video>
+            <div><p>OBJECT SEARCH 03</p><h3 data-zh="寻找饮水机 · 测试 A" data-en="Find the water dispenser · Test A">寻找饮水机 · 测试 A</h3></div>
+          </article>
+          <article class="video-card">
+            <video controls muted playsinline preload="metadata"><source src="media/find-water-dispenser-02.mp4" type="video/mp4" /></video>
+            <div><p>OBJECT SEARCH 04</p><h3 data-zh="寻找饮水机 · 测试 B" data-en="Find the water dispenser · Test B">寻找饮水机 · 测试 B</h3></div>
+          </article>
+          <article class="video-card video-card-wide">
+            <video controls muted playsinline preload="metadata"><source src="media/gate-passage.mp4" type="video/mp4" /></video>
+            <div><p>STRUCTURED PASSAGE</p><h3 data-zh="穿越闸机" data-en="Passing through an access gate">穿越闸机</h3></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="updates" class="section updates">
+        <p class="section-index">03 / CONTINUOUS UPDATES</p>
+        <h2 data-zh="从几个清晰案例开始，持续扩展真实任务" data-en="Starting with clear cases, expanding toward more real-world tasks">从几个清晰案例开始，持续扩展真实任务</h2>
+        <p data-zh="这里记录纯视觉 VLN 的阶段性进展。后续新的场景、任务和更完整的视频会持续加入。" data-en="This page documents the evolving progress of pure-vision VLN. New scenes, tasks, and longer demonstrations will be added as the project develops.">这里记录纯视觉 VLN 的阶段性进展。后续新的场景、任务和更完整的视频会持续加入。</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>PUREVISION VLN</span>
+      <span data-zh="多目纯视觉 · 语言驱动 · 持续更新" data-en="Multi-view vision · Language driven · Continuously updated">多目纯视觉 · 语言驱动 · 持续更新</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
