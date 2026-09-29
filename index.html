@@ -15,7 +15,8 @@
       </a>
       <nav aria-label="Page navigation">
         <a href="#approach" data-zh="方案" data-en="Approach">方案</a>
-        <a href="#showcase" data-zh="视频" data-en="Videos">视频</a>
+        <a href="#showcase" data-zh="真机" data-en="Real world">真机</a>
+        <a href="#simulation" data-zh="仿真" data-en="Simulation">仿真</a>
         <a href="#updates" data-zh="更新" data-en="Updates">更新</a>
       </nav>
       <div class="language-switch" role="group" aria-label="Language">
@@ -73,9 +74,9 @@
 
       <section id="showcase" class="section showcase">
         <div class="section-head section-head-light">
-          <p class="section-index">02 / VIDEO SHOWCASE</p>
-          <h2 data-zh="当前演示" data-en="Current demonstrations">当前演示</h2>
-          <p data-zh="每段视频均来自当前阶段的真实任务测试。点击播放，后续内容会持续补充。" data-en="Each clip comes from a current task evaluation. Play any video below; more scenarios will be added over time.">每段视频均来自当前阶段的真实任务测试。点击播放，后续内容会持续补充。</p>
+          <p class="section-index">02 / REAL-WORLD DEMONSTRATIONS</p>
+          <h2 data-zh="真机演示" data-en="Real-world demonstrations">真机演示</h2>
+          <p data-zh="页面优先展示真实机器人任务结果，包括跨区域通行、语义目标寻找与闸机通过。" data-en="Real-robot results remain the primary focus, covering cross-area navigation, semantic object search, and access-gate passage.">页面优先展示真实机器人任务结果，包括跨区域通行、语义目标寻找与闸机通过。</p>
         </div>
 
         <div class="feature-video">
@@ -121,8 +122,93 @@
         </div>
       </section>
 
+      <section id="simulation" class="section simulation">
+        <div class="section-head">
+          <p class="section-index">03 / CLOSED-LOOP SIMULATION</p>
+          <h2 data-zh="闭环仿真评测" data-en="Closed-loop simulation evaluation">闭环仿真评测</h2>
+          <p data-zh="以下 7 条均为成功完成并主动 STOP 的仿真器闭环在线评测，不是真机录像或训练样本。模型依据语言指令与多视图视觉观测持续预测局部航点和 STOP，控制器实际执行预测结果。" data-en="All seven cases below are successful closed-loop online simulation evaluations with an active STOP, not real-robot footage or training samples. The model continuously predicts local waypoints and STOP from language instructions and multi-view observations, while the controller executes those predictions.">以下 7 条均为成功完成并主动 STOP 的仿真器闭环在线评测，不是真机录像或训练样本。模型依据语言指令与多视图视觉观测持续预测局部航点和 STOP，控制器实际执行预测结果。</p>
+        </div>
+
+        <div class="simulation-label">
+          <span data-zh="仿真结果" data-en="SIMULATION RESULT">仿真结果</span>
+          <p data-zh="室外语义路线：绕行与穿越" data-en="Outdoor semantic routes: bypassing and crossing">室外语义路线：绕行与穿越</p>
+        </div>
+        <div class="simulation-grid simulation-grid-three">
+          <article class="simulation-card">
+            <video controls muted playsinline preload="metadata"><source src="media/simulation/outdoor-bypass-right-blue.mp4?v=2" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">OUTDOOR · SEMANTIC ROUTE</p>
+              <h3 data-zh="从草地右侧绕行，经过蓝色地面" data-en="Pass right of the grass, then cross the blue ground">从草地右侧绕行，经过蓝色地面</h3>
+              <p class="instruction">“Follow the traversable area on the right side of the grass, continue across the blue ground, and reach the target point.”</p>
+              <dl class="metrics"><div><dt>SPL</dt><dd>1.000</dd></div><div><dt data-zh="终点误差" data-en="Final error">终点误差</dt><dd>0.021 m</dd></div><div><dt data-zh="碰撞" data-en="Collisions">碰撞</dt><dd>0</dd></div></dl>
+            </div>
+          </article>
+          <article class="simulation-card">
+            <video controls muted playsinline preload="metadata"><source src="media/simulation/outdoor-bypass-left.mp4?v=2" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">OUTDOOR · SEMANTIC ROUTE</p>
+              <h3 data-zh="沿草地左侧可通行区域前进" data-en="Follow the traversable area left of the grass">沿草地左侧可通行区域前进</h3>
+              <p class="instruction">“Follow the traversable area on the left side of the grass and reach the target point.”</p>
+              <dl class="metrics"><div><dt>SPL</dt><dd>1.000</dd></div><div><dt data-zh="终点误差" data-en="Final error">终点误差</dt><dd>0.041 m</dd></div><div><dt data-zh="碰撞" data-en="Collisions">碰撞</dt><dd>0</dd></div></dl>
+            </div>
+          </article>
+          <article class="simulation-card">
+            <video controls muted playsinline preload="metadata"><source src="media/simulation/outdoor-cross-grass.mp4?v=2" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">OUTDOOR · SEMANTIC ROUTE</p>
+              <h3 data-zh="直接穿过草地到达目标" data-en="Cross the grass directly to the target">直接穿过草地到达目标</h3>
+              <p class="instruction">“Cross the grass and reach the target point.”</p>
+              <dl class="metrics"><div><dt>SPL</dt><dd>1.000</dd></div><div><dt data-zh="终点误差" data-en="Final error">终点误差</dt><dd>0.071 m</dd></div><div><dt data-zh="碰撞" data-en="Collisions">碰撞</dt><dd>0</dd></div></dl>
+            </div>
+          </article>
+        </div>
+
+        <div class="simulation-label simulation-label-spaced">
+          <span data-zh="仿真结果" data-en="SIMULATION RESULT">仿真结果</span>
+          <p data-zh="室内 STOP 与朝向扰动恢复" data-en="Indoor STOP and heading-perturbation recovery">室内 STOP 与朝向扰动恢复</p>
+        </div>
+        <div class="simulation-grid">
+          <article class="simulation-card">
+            <video controls muted playsinline preload="metadata"><source src="media/simulation/indoor-cross-area-normal.mp4?v=2" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">CROSS-AREA · NORMAL HEADING</p>
+              <h3 data-zh="跨区域长路线：标准初始朝向" data-en="Long cross-area route: standard initial heading">跨区域长路线：标准初始朝向</h3>
+              <p class="instruction">“Stop in the kitchen area aisle between the white kitchen cabinets and counter/island, near the green chair, red floor markings, and a wheeled robot at the cabinets.”</p>
+              <dl class="metrics"><div><dt>SPL</dt><dd>0.960</dd></div><div><dt data-zh="终点误差" data-en="Final error">终点误差</dt><dd>0.168 m</dd></div><div><dt data-zh="碰撞" data-en="Collisions">碰撞</dt><dd>0</dd></div></dl>
+            </div>
+          </article>
+          <article class="simulation-card">
+            <video controls muted playsinline preload="metadata"><source src="media/simulation/indoor-cross-area-yaw-m075.mp4?v=2" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">CROSS-AREA · YAW -75°</p>
+              <h3 data-zh="同一路线：起始朝向偏转 -75°" data-en="Same route: initial heading perturbed by -75°">同一路线：起始朝向偏转 -75°</h3>
+              <p class="instruction" data-zh="与左侧任务指令相同，用于观察错误初始朝向下的方向恢复。" data-en="The instruction matches the adjacent task, testing recovery from an incorrect initial heading.">与左侧任务指令相同，用于观察错误初始朝向下的方向恢复。</p>
+              <dl class="metrics"><div><dt>SPL</dt><dd>0.962</dd></div><div><dt data-zh="终点误差" data-en="Final error">终点误差</dt><dd>0.182 m</dd></div><div><dt data-zh="碰撞" data-en="Collisions">碰撞</dt><dd>1</dd></div></dl>
+            </div>
+          </article>
+          <article class="simulation-card">
+            <video controls muted playsinline preload="metadata"><source src="media/simulation/bedroom-stop-normal.mp4?v=2" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">PRECISE STOP · NORMAL HEADING</p>
+              <h3 data-zh="卧室精确停靠：标准初始朝向" data-en="Precise bedroom stop: standard initial heading">卧室精确停靠：标准初始朝向</h3>
+              <p class="instruction">“Stop facing the wall corner in the bedroom area, with the red barrier belt and brown doorway on the left and the yellow cabinet and black coat rack on the right.”</p>
+              <dl class="metrics"><div><dt>SPL</dt><dd>0.995</dd></div><div><dt data-zh="终点误差" data-en="Final error">终点误差</dt><dd>0.210 m</dd></div><div><dt data-zh="碰撞" data-en="Collisions">碰撞</dt><dd>0</dd></div></dl>
+            </div>
+          </article>
+          <article class="simulation-card">
+            <video controls muted playsinline preload="metadata"><source src="media/simulation/bedroom-stop-yaw-p075.mp4?v=2" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">PRECISE STOP · YAW +75°</p>
+              <h3 data-zh="同一停靠任务：起始朝向偏转 +75°" data-en="Same stopping task: initial heading perturbed by +75°">同一停靠任务：起始朝向偏转 +75°</h3>
+              <p class="instruction" data-zh="与左侧任务指令相同，用于观察先修正朝向、再接近目标并停止的过程。" data-en="The instruction matches the adjacent task, showing heading correction before target approach and STOP.">与左侧任务指令相同，用于观察先修正朝向、再接近目标并停止的过程。</p>
+              <dl class="metrics"><div><dt>SPL</dt><dd>0.785</dd></div><div><dt data-zh="终点误差" data-en="Final error">终点误差</dt><dd>0.253 m</dd></div><div><dt data-zh="碰撞" data-en="Collisions">碰撞</dt><dd>0</dd></div></dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section id="updates" class="section updates">
-        <p class="section-index">03 / CONTINUOUS UPDATES</p>
+        <p class="section-index">04 / CONTINUOUS UPDATES</p>
         <h2 data-zh="从几个清晰案例开始，持续扩展真实任务" data-en="Starting with clear cases, expanding toward more real-world tasks">从几个清晰案例开始，持续扩展真实任务</h2>
         <p data-zh="这里记录纯视觉 VLN 的阶段性进展。后续新的场景、任务和更完整的视频会持续加入。" data-en="This page documents the evolving progress of pure-vision VLN. New scenes, tasks, and longer demonstrations will be added as the project develops.">这里记录纯视觉 VLN 的阶段性进展。后续新的场景、任务和更完整的视频会持续加入。</p>
       </section>
