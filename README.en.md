@@ -9,7 +9,7 @@ With a small set of scene-level demonstrations, the system can align spatial con
 ## Current demos
 
 - Indoor cross-area navigation: living room to kitchen.
-- Semantic object search: bed, wooden wardrobe, and water dispenser.
+- Semantic object search: bed, wooden wardrobe, and water dispenser. The water-dispenser demos include both lights-on and lights-off test scenes; training used only lights-on scene data.
 - Structured passage: moving through an access gate.
 
 ## Live page

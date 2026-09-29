@@ -70,6 +70,7 @@ section { scroll-margin-top: 4.5rem; }
 .video-card > div { min-height: 5rem; padding: 1rem; }
 .video-card p { color: #18767a; }
 .video-card h3 { margin-top: 0.35rem; font-size: 1.1rem; }
+.video-note { display: block; margin-top: 0.55rem; color: #687477; font-size: 0.82rem; line-height: 1.5; }
 .video-card-wide { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(14rem, 0.4fr); }
 .video-card-wide video { aspect-ratio: 16 / 6; }
 .video-card-wide > div { display: flex; flex-direction: column; justify-content: center; border-left: 1px solid var(--line-light); }
