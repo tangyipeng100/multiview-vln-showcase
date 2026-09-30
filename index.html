@@ -17,7 +17,7 @@
         <a href="#approach" data-zh="方案" data-en="Approach">方案</a>
         <a href="#showcase" data-zh="真机" data-en="Real world">真机</a>
         <a href="#simulation" data-zh="仿真" data-en="Simulation">仿真</a>
-        <a href="#updates" data-zh="更新" data-en="Updates">更新</a>
+        <a href="#timeline" data-zh="时间线" data-en="Timeline">时间线</a>
       </nav>
       <div class="language-switch" role="group" aria-label="Language">
         <button class="active" type="button" data-language="zh">中文</button>
@@ -76,7 +76,7 @@
         <div class="section-head section-head-light">
           <p class="section-index">02 / REAL-WORLD DEMONSTRATIONS</p>
           <h2 data-zh="真机演示" data-en="Real-world demonstrations">真机演示</h2>
-          <p data-zh="页面优先展示真实机器人任务结果，包括跨区域通行、语义目标寻找与闸机通过。" data-en="Real-robot results remain the primary focus, covering cross-area navigation, semantic object search, and access-gate passage.">页面优先展示真实机器人任务结果，包括跨区域通行、语义目标寻找与闸机通过。</p>
+          <p data-zh="页面优先展示真实机器人任务结果，包括跨区域通行、语义目标寻找、闸机通过与电梯交互。" data-en="Real-robot results remain the primary focus, covering cross-area navigation, semantic object search, access-gate passage, and elevator interaction.">页面优先展示真实机器人任务结果，包括跨区域通行、语义目标寻找、闸机通过与电梯交互。</p>
         </div>
 
         <div class="feature-video">
@@ -118,6 +118,38 @@
           <article class="video-card video-card-wide">
             <video controls muted playsinline preload="none" poster="media/posters/gate-passage.jpg"><source src="media/gate-passage.mp4" type="video/mp4" /></video>
             <div><p>STRUCTURED PASSAGE</p><h3 data-zh="穿越闸机" data-en="Passing through an access gate">穿越闸机</h3></div>
+          </article>
+        </div>
+
+        <div class="showcase-subhead">
+          <p class="section-index">2026-09-30 / ELEVATOR INTERACTION</p>
+          <h3 data-zh="从结构通行扩展到电梯交互" data-en="Extending structured passage to elevator interaction">从结构通行扩展到电梯交互</h3>
+          <p data-zh="新增进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹的真机测试。" data-en="New real-robot tests cover entering, exiting, and selecting a left or right trajectory according to which elevator door opens.">新增进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹的真机测试。</p>
+        </div>
+        <div class="video-grid video-grid-three">
+          <article class="video-card">
+            <video controls muted playsinline preload="none" poster="media/elevator/posters/enter-elevator.jpg"><source src="media/elevator/enter-elevator.mp4" type="video/mp4" /></video>
+            <div>
+              <p>ELEVATOR · ENTRY</p>
+              <h3 data-zh="进入电梯" data-en="Entering the elevator">进入电梯</h3>
+              <span class="video-note" data-zh="根据电梯入口的视觉结构生成前进轨迹并完成进入。" data-en="The robot generates and executes an entry trajectory from the visual structure of the elevator entrance.">根据电梯入口的视觉结构生成前进轨迹并完成进入。</span>
+            </div>
+          </article>
+          <article class="video-card">
+            <video controls muted playsinline preload="none" poster="media/elevator/posters/exit-elevator.jpg"><source src="media/elevator/exit-elevator.mp4" type="video/mp4" /></video>
+            <div>
+              <p>ELEVATOR · EXIT</p>
+              <h3 data-zh="驶出电梯" data-en="Exiting the elevator">驶出电梯</h3>
+              <span class="video-note" data-zh="识别打开的电梯出口并执行连续驶出轨迹。" data-en="The robot identifies the open exit and executes a continuous trajectory out of the elevator.">识别打开的电梯出口并执行连续驶出轨迹。</span>
+            </div>
+          </article>
+          <article class="video-card">
+            <video controls muted playsinline preload="none" poster="media/elevator/posters/left-right-selection.jpg"><source src="media/elevator/left-right-selection.mp4" type="video/mp4" /></video>
+            <div>
+              <p>ELEVATOR · VISUAL SELECTION</p>
+              <h3 data-zh="左右电梯门选择" data-en="Left/right elevator selection">左右电梯门选择</h3>
+              <span class="video-note" data-zh="左门开启时轨迹指向左侧，右门开启时轨迹指向右侧。本视频仅验证视觉判断与轨迹选择，未执行移动。" data-en="The trajectory points left when the left door opens and right when the right door opens. This clip validates visual judgment and trajectory selection only; no movement was executed.">左门开启时轨迹指向左侧，右门开启时轨迹指向右侧。本视频仅验证视觉判断与轨迹选择，未执行移动。</span>
+            </div>
           </article>
         </div>
       </section>
@@ -207,8 +239,32 @@
         </div>
       </section>
 
+      <section id="timeline" class="section timeline">
+        <div class="section-head">
+          <p class="section-index">04 / PROJECT TIMELINE</p>
+          <h2 data-zh="项目演进" data-en="Project evolution">项目演进</h2>
+          <p data-zh="按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。" data-en="A dated record of new scenes, capability tests, and result boundaries as real-robot tasks continue to expand.">按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。</p>
+        </div>
+        <ol class="timeline-list">
+          <li>
+            <time datetime="2026-09-30">2026-09-30</time>
+            <div>
+              <h3 data-zh="新增电梯交互场景" data-en="Elevator interaction added">新增电梯交互场景</h3>
+              <p data-zh="加入进电梯、出电梯和左右电梯门选择测试。进出场景包含实际运动；左右选择场景验证门开启状态理解与方向轨迹生成，未执行移动。" data-en="Added elevator entry, exit, and left/right door-selection tests. Entry and exit include executed motion; left/right selection validates door-state understanding and directional trajectory generation without executing movement.">加入进电梯、出电梯和左右电梯门选择测试。进出场景包含实际运动；左右选择场景验证门开启状态理解与方向轨迹生成，未执行移动。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-09-29">2026-09-29</time>
+            <div>
+              <h3 data-zh="首批真机与仿真结果上线" data-en="Initial real-world and simulation results published">首批真机与仿真结果上线</h3>
+              <p data-zh="展示跨区域通行、语义找物、闸机通过、明暗环境测试，以及闭环仿真中的语义路线、精确 STOP 和朝向扰动恢复。" data-en="Published cross-area navigation, semantic object search, access-gate passage, lighting-condition tests, and closed-loop simulation results for semantic routes, precise STOP, and heading-perturbation recovery.">展示跨区域通行、语义找物、闸机通过、明暗环境测试，以及闭环仿真中的语义路线、精确 STOP 和朝向扰动恢复。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
       <section id="updates" class="section updates">
-        <p class="section-index">04 / CONTINUOUS UPDATES</p>
+        <p class="section-index">05 / CONTINUOUS UPDATES</p>
         <h2 data-zh="从几个清晰案例开始，持续扩展真实任务" data-en="Starting with clear cases, expanding toward more real-world tasks">从几个清晰案例开始，持续扩展真实任务</h2>
         <p data-zh="这里记录纯视觉 VLN 的阶段性进展。后续新的场景、任务和更完整的视频会持续加入。" data-en="This page documents the evolving progress of pure-vision VLN. New scenes, tasks, and longer demonstrations will be added as the project develops.">这里记录纯视觉 VLN 的阶段性进展。后续新的场景、任务和更完整的视频会持续加入。</p>
       </section>

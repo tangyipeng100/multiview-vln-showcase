@@ -11,12 +11,18 @@ With a small set of scene-level demonstrations, the system can align spatial con
 - Indoor cross-area navigation: living room to kitchen.
 - Semantic object search: bed, wooden wardrobe, and water dispenser. The water-dispenser demos include both lights-on and lights-off test scenes; training used only lights-on scene data.
 - Structured passage: moving through an access gate.
+- Elevator interaction: entering, exiting, and generating a directional trajectory according to which elevator door opens. The left/right selection video validates visual judgment and trajectory selection only; no movement was executed.
 
 ## Simulation evaluation
 
 After the real-robot results, the page presents seven representative closed-loop simulation evaluations. They cover outdoor grass bypass/crossing, indoor cross-area navigation, precise STOP, and recovery from initial heading perturbations of ±75°. Simulation footage is clearly separated from real-robot video and includes SPL, final error, and collision counts.
 
 These videos are closed-loop online evaluations after training, not training samples. The model continuously predicts local waypoints and STOP while the controller executes those predictions.
+
+## Project timeline
+
+- **2026-09-30**: Added elevator entry, exit, and left/right door-selection scenes.
+- **2026-09-29**: Published the initial real-world and simulation results, including cross-area navigation, semantic object search, access-gate passage, lighting-condition tests, and closed-loop simulation evaluation.
 
 ## Live page
 
