@@ -126,7 +126,7 @@
           <h3 data-zh="从结构通行扩展到电梯交互" data-en="Extending structured passage to elevator interaction">从结构通行扩展到电梯交互</h3>
           <p data-zh="新增进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹的真机测试。" data-en="New real-robot tests cover entering, exiting, and selecting a left or right trajectory according to which elevator door opens.">新增进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹的真机测试。</p>
         </div>
-        <div class="video-grid video-grid-three">
+        <div class="video-grid">
           <article class="video-card">
             <video controls muted playsinline preload="none" poster="media/elevator/posters/enter-elevator.jpg"><source src="media/elevator/enter-elevator.mp4" type="video/mp4" /></video>
             <div>
@@ -149,6 +149,14 @@
               <p>ELEVATOR · VISUAL SELECTION</p>
               <h3 data-zh="左右电梯门选择" data-en="Left/right elevator selection">左右电梯门选择</h3>
               <span class="video-note" data-zh="左门开启时轨迹指向左侧，右门开启时轨迹指向右侧。本视频仅验证视觉判断与轨迹选择，未执行移动。" data-en="The trajectory points left when the left door opens and right when the right door opens. This clip validates visual judgment and trajectory selection only; no movement was executed.">左门开启时轨迹指向左侧，右门开启时轨迹指向右侧。本视频仅验证视觉判断与轨迹选择，未执行移动。</span>
+            </div>
+          </article>
+          <article class="video-card">
+            <video controls muted playsinline preload="none" poster="media/elevator/posters/limited-door-entry.jpg"><source src="media/elevator/limited-door-entry.mp4" type="video/mp4" /></video>
+            <div>
+              <p>ELEVATOR · LIMITED VISUAL CUE</p>
+              <h3 data-zh="弱开门线索下进入电梯" data-en="Elevator entry from a limited door cue">弱开门线索下进入电梯</h3>
+              <span class="video-note" data-zh="摄像头中仅能看到较小的电梯开门区域，机器人仍生成进入轨迹并完成进梯。" data-en="Only a small portion of the open elevator doorway is visible to the cameras, yet the robot still generates an entry trajectory and enters the elevator.">摄像头中仅能看到较小的电梯开门区域，机器人仍生成进入轨迹并完成进梯。</span>
             </div>
           </article>
         </div>
@@ -246,6 +254,13 @@
           <p data-zh="按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。" data-en="A dated record of new scenes, capability tests, and result boundaries as real-robot tasks continue to expand.">按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。</p>
         </div>
         <ol class="timeline-list">
+          <li>
+            <time datetime="2026-10-08">2026-10-08</time>
+            <div>
+              <h3 data-zh="新增弱开门线索进梯案例" data-en="Elevator entry with a limited door cue">新增弱开门线索进梯案例</h3>
+              <p data-zh="在摄像头仅能观察到较小开门区域的条件下，机器人仍根据有限视觉线索生成进入轨迹并完成进梯。" data-en="With only a small portion of the open doorway visible to the cameras, the robot still uses the limited visual cue to generate an entry trajectory and enter the elevator.">在摄像头仅能观察到较小开门区域的条件下，机器人仍根据有限视觉线索生成进入轨迹并完成进梯。</p>
+            </div>
+          </li>
           <li>
             <time datetime="2026-09-30">2026-09-30</time>
             <div>

@@ -21,6 +21,7 @@ These videos are closed-loop online evaluations after training, not training sam
 
 ## Project timeline
 
+- **2026-10-08**: Added a real-robot elevator-entry case with a limited door cue. Only a small portion of the open doorway is visible to the cameras, yet the robot still generates an entry trajectory and enters the elevator.
 - **2026-09-30**: Added elevator entry, exit, and left/right door-selection scenes.
 - **2026-09-29**: Published the initial real-world and simulation results, including cross-area navigation, semantic object search, access-gate passage, lighting-condition tests, and closed-loop simulation evaluation.
 
