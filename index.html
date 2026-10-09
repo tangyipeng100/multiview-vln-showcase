@@ -122,9 +122,42 @@
         </div>
 
         <div class="showcase-subhead">
-          <p class="section-index">2026-09-30 / ELEVATOR INTERACTION</p>
+          <p class="section-index">2026-10-09 / PRECISE OBJECT SEARCH</p>
+          <h3 data-zh="小目标精确找物：方向正确，停止仍需改进" data-en="Precise small-object search: correct approach trend, unstable stopping">小目标精确找物：方向正确，停止仍需改进</h3>
+          <p data-zh="两段真机视频使用同一条指令寻找白色小型毛绒玩具，并在不同场景中测试接近与停止表现。" data-en="Two real-robot clips use the same instruction to find a small white plush toy, testing approach and stopping behavior in different scenes.">两段真机视频使用同一条指令寻找白色小型毛绒玩具，并在不同场景中测试接近与停止表现。</p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <video controls muted playsinline preload="none" poster="media/precise-object-search/posters/small-plush-scene-a.jpg"><source src="media/precise-object-search/small-plush-scene-a.mp4" type="video/mp4" /></video>
+            <div>
+              <p>PRECISE OBJECT SEARCH · SCENE A</p>
+              <h3 data-zh="寻找白色小型毛绒玩具 · 场景 A" data-en="Find the small white plush toy · Scene A">寻找白色小型毛绒玩具 · 场景 A</h3>
+              <span class="video-note" data-zh="轨迹整体朝向目标，但目标较小，近距离 STOP 尚不稳定。" data-en="The trajectory trends toward the target, but the target is small and close-range STOP remains unstable.">轨迹整体朝向目标，但目标较小，近距离 STOP 尚不稳定。</span>
+            </div>
+          </article>
+          <article class="video-card">
+            <video controls muted playsinline preload="none" poster="media/precise-object-search/posters/small-plush-scene-b.jpg"><source src="media/precise-object-search/small-plush-scene-b.mp4" type="video/mp4" /></video>
+            <div>
+              <p>PRECISE OBJECT SEARCH · SCENE B</p>
+              <h3 data-zh="同一目标与指令 · 更换场景" data-en="Same target and instruction · Changed scene">同一目标与指令 · 更换场景</h3>
+              <span class="video-note" data-zh="更换场景后继续观察模型的目标趋近与停止行为，用于分析场景纹理和目标尺度的影响。" data-en="The changed scene is used to observe approach and stopping behavior under the same task, helping analyze the influence of scene texture and target scale.">更换场景后继续观察模型的目标趋近与停止行为，用于分析场景纹理和目标尺度的影响。</span>
+            </div>
+          </article>
+        </div>
+        <div class="observation-note">
+          <strong data-zh="阶段性观察" data-en="CURRENT OBSERVATION">阶段性观察</strong>
+          <p data-zh="模型能够形成朝向小目标的正确运动趋势，但尚不能稳定在目标旁停止。目前推测小目标在多目画面中的占比、场景纹理与目标特征的耦合都可能影响 STOP；仍需通过更多跨场景、小目标和近终点数据验证。" data-en="The model forms a correct motion trend toward the small target but does not yet stop reliably beside it. Current hypotheses include the target's small image footprint and coupling between scene texture and target features; more cross-scene, small-object, and near-goal data are required to verify them.">模型能够形成朝向小目标的正确运动趋势，但尚不能稳定在目标旁停止。目前推测小目标在多目画面中的占比、场景纹理与目标特征的耦合都可能影响 STOP；仍需通过更多跨场景、小目标和近终点数据验证。</p>
+        </div>
+
+        <div class="showcase-subhead">
+          <p class="section-index">2026-09-30—2026-10-09 / ELEVATOR INTERACTION</p>
           <h3 data-zh="从结构通行扩展到电梯交互" data-en="Extending structured passage to elevator interaction">从结构通行扩展到电梯交互</h3>
-          <p data-zh="新增进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹的真机测试。" data-en="New real-robot tests cover entering, exiting, and selecting a left or right trajectory according to which elevator door opens.">新增进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹的真机测试。</p>
+          <p data-zh="真机测试覆盖进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹。" data-en="Real-robot tests cover entering, exiting, and selecting a left or right trajectory according to which elevator door opens.">真机测试覆盖进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹。</p>
+        </div>
+        <div class="elevator-results">
+          <div><span data-zh="进电梯成功率" data-en="Elevator entry success">进电梯成功率</span><strong>10 / 11</strong></div>
+          <div><span data-zh="出电梯成功率" data-en="Elevator exit success">出电梯成功率</span><strong>7 / 10</strong></div>
+          <p data-zh="当前失败主要出现在强日照下的镜面电梯环境，以及充电后机器人初始停靠位置发生变化的条件。现阶段判断强反射与起点差异可能影响视觉输入和轨迹执行，后续将补充不同光照与初始位置的数据。" data-en="Failures were mainly observed in the mirror-lined elevator under strong sunlight and when the robot's initial parked position changed after charging. Strong reflections and start-position variation may affect visual input and trajectory execution; more data across lighting conditions and initial poses will be collected.">当前失败主要出现在强日照下的镜面电梯环境，以及充电后机器人初始停靠位置发生变化的条件。现阶段判断强反射与起点差异可能影响视觉输入和轨迹执行，后续将补充不同光照与初始位置的数据。</p>
         </div>
         <div class="video-grid">
           <article class="video-card">
@@ -157,6 +190,14 @@
               <p>ELEVATOR · LIMITED VISUAL CUE</p>
               <h3 data-zh="弱开门线索下进入电梯" data-en="Elevator entry from a limited door cue">弱开门线索下进入电梯</h3>
               <span class="video-note" data-zh="摄像头中仅能看到较小的电梯开门区域，机器人仍生成进入轨迹并完成进梯。" data-en="Only a small portion of the open elevator doorway is visible to the cameras, yet the robot still generates an entry trajectory and enters the elevator.">摄像头中仅能看到较小的电梯开门区域，机器人仍生成进入轨迹并完成进梯。</span>
+            </div>
+          </article>
+          <article class="video-card video-card-wide">
+            <video controls muted playsinline preload="none" poster="media/elevator/posters/entry-additional-02.jpg"><source src="media/elevator/entry-additional-02.mp4" type="video/mp4" /></video>
+            <div>
+              <p>ELEVATOR · ADDITIONAL ENTRY TRIAL</p>
+              <h3 data-zh="补充进电梯执行样例" data-en="Additional elevator-entry trial">补充进电梯执行样例</h3>
+              <span class="video-note" data-zh="用于扩充不同开门视觉状态与初始位置下的进梯记录。" data-en="An additional executed entry trial covering another door appearance and initial position.">用于扩充不同开门视觉状态与初始位置下的进梯记录。</span>
             </div>
           </article>
         </div>
@@ -254,6 +295,13 @@
           <p data-zh="按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。" data-en="A dated record of new scenes, capability tests, and result boundaries as real-robot tasks continue to expand.">按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。</p>
         </div>
         <ol class="timeline-list">
+          <li>
+            <time datetime="2026-10-09">2026-10-09</time>
+            <div>
+              <h3 data-zh="新增精确找物对照与电梯统计" data-en="Precise-object comparison and elevator statistics added">新增精确找物对照与电梯统计</h3>
+              <p data-zh="加入同一小型毛绒目标在两个场景中的趋近与 STOP 对照视频；公布进电梯 10/11、出电梯 7/10 的真机统计，并补充一条进梯执行样例。" data-en="Added cross-scene approach and STOP comparisons for the same small plush target, published real-robot elevator results of 10/11 entries and 7/10 exits, and added another executed entry trial.">加入同一小型毛绒目标在两个场景中的趋近与 STOP 对照视频；公布进电梯 10/11、出电梯 7/10 的真机统计，并补充一条进梯执行样例。</p>
+            </div>
+          </li>
           <li>
             <time datetime="2026-10-08">2026-10-08</time>
             <div>

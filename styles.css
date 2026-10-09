@@ -79,6 +79,14 @@ section { scroll-margin-top: 4.5rem; }
 .showcase-subhead h3 { font-size: clamp(1.7rem, 3vw, 2.7rem); line-height: 1.15; }
 .showcase-subhead > p:last-child { color: #5f6a6d; line-height: 1.7; }
 .video-grid-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.observation-note { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 2rem; margin-top: 1rem; padding: 1.3rem 0; border-top: 1px solid var(--line-light); border-bottom: 1px solid var(--line-light); }
+.observation-note strong { color: #18767a; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.78rem; }
+.observation-note p { max-width: 62rem; color: #566366; line-height: 1.75; }
+.elevator-results { display: grid; grid-template-columns: 12rem 12rem minmax(0, 1fr); gap: 2rem; align-items: start; margin-top: 2rem; padding: 1.3rem 0; border-top: 1px solid var(--line-light); border-bottom: 1px solid var(--line-light); }
+.elevator-results div { display: flex; flex-direction: column; gap: 0.45rem; }
+.elevator-results span { color: #687477; font-size: 0.78rem; }
+.elevator-results strong { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 1.7rem; }
+.elevator-results p { color: #566366; line-height: 1.75; }
 
 .simulation { background: #0b1112; }
 .simulation .section-head { align-items: start; }
@@ -119,6 +127,8 @@ footer span:first-child { color: white; font-weight: 750; }
   .video-grid-three { grid-template-columns: 1fr 1fr; }
   .simulation-grid-three { grid-template-columns: 1fr 1fr; }
   .approach-copy { grid-template-columns: 1fr; gap: 1.3rem; }
+  .elevator-results { grid-template-columns: 1fr 1fr; }
+  .elevator-results p { grid-column: 1 / -1; }
   .feature-video > div { border-top: 1px solid var(--line-dark); border-left: 0; }
   .feature-video video { min-height: 0; aspect-ratio: 16 / 9; }
 }
@@ -136,6 +146,8 @@ footer span:first-child { color: white; font-weight: 750; }
   .section { padding: 4.5rem 1.2rem; }
   .section-head h2, .updates h2 { font-size: 2.3rem; }
   .capability-ledger, .video-grid, .simulation-grid, .simulation-grid-three { grid-template-columns: 1fr; }
+  .observation-note, .elevator-results { grid-template-columns: 1fr; gap: 0.8rem; }
+  .elevator-results p { grid-column: auto; }
   .capability-ledger article { min-height: 9.5rem; border-right: 0; border-bottom: 1px solid var(--line-dark); }
   .capability-ledger article:last-child { border-bottom: 0; }
   .video-card-wide { grid-column: auto; display: block; }
