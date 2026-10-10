@@ -13,7 +13,7 @@ With a small set of scene-level demonstrations, the system can align spatial con
 - Structured passage: moving through an access gate.
 - Unseen compound instruction: executing “go to the living-room area and find the long white table,” which combines cross-area navigation and semantic object search. This is one real-robot execution and is not presented as validation of all unseen instructions.
 - Precise-object exploration: using the same instruction to find a small white plush toy in two scenes. The motion trend points toward the target, but close-range STOP is not yet stable; the effects of target scale and scene texture require more data.
-- Elevator interaction: entering, exiting, and generating a directional trajectory according to which elevator door opens. The left/right selection video validates visual judgment and trajectory selection only; no movement was executed. Current real-robot results are `10/11` successful entries and `7/10` successful exits.
+- Elevator interaction: entering, exiting, and generating a directional trajectory according to which elevator door opens. Two new real-robot clips show the robot exiting and stopping near the red circular lobby marker; one includes a person passing near the doorway. The left/right selection video validates visual judgment and trajectory selection only; no movement was executed. Current real-robot results remain `10/11` successful entries and `7/10` successful exits; the new showcase clips were not used to recalculate these figures.
 
 ## Simulation evaluation
 
@@ -23,7 +23,7 @@ These videos are closed-loop online evaluations after training, not training sam
 
 ## Project timeline
 
-- **2026-10-10**: Added a real-robot cross-area object-search case driven by an exact compound instruction absent from training, plus another executed elevator-entry video.
+- **2026-10-10**: Added a real-robot cross-area object-search case driven by an exact compound instruction absent from training, one executed elevator-entry video, and two elevator-exit clips that stop near the red lobby marker.
 - **2026-10-09**: Added two cross-scene precise small-object search comparisons, elevator entry/exit statistics, and another executed elevator-entry trial.
 - **2026-10-08**: Added a real-robot elevator-entry case with a limited door cue. Only a small portion of the open doorway is visible to the cameras, yet the robot still generates an entry trajectory and enters the elevator.
 - **2026-09-30**: Added elevator entry, exit, and left/right door-selection scenes.
