@@ -122,6 +122,22 @@
         </div>
 
         <div class="showcase-subhead">
+          <p class="section-index">2026-10-10 / UNSEEN COMPOUND INSTRUCTION</p>
+          <h3 data-zh="未训练复合指令：跨区域寻找长白桌" data-en="Unseen compound instruction: cross-area search for a long white table">未训练复合指令：跨区域寻找长白桌</h3>
+          <p data-zh="指令同时要求机器人前往客厅区域并找到长白桌。训练数据未包含这条复合指令，本段记录模型在真机上的一次实际执行结果。" data-en="The instruction asks the robot to move to the living-room area and find a long white table. This exact compound instruction was not present in training; the clip records one real-robot execution.">指令同时要求机器人前往客厅区域并找到长白桌。训练数据未包含这条复合指令，本段记录模型在真机上的一次实际执行结果。</p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card video-card-wide">
+            <video controls muted playsinline preload="none" poster="media/compound-instruction/posters/cross-area-object-search.jpg"><source src="media/compound-instruction/cross-area-object-search.mp4" type="video/mp4" /></video>
+            <div>
+              <p>UNSEEN COMPOUND INSTRUCTION · REAL ROBOT</p>
+              <h3 data-zh="前往客厅区域并寻找长白桌" data-en="Go to the living-room area and find the long white table">前往客厅区域并寻找长白桌</h3>
+              <span class="video-note" data-zh="该案例组合了跨区域通行与语义找物；页面展示单次执行，不将其扩展解释为所有未见复合指令均已验证。" data-en="This case combines cross-area navigation with semantic object search. It is presented as a single execution, not as evidence that all unseen compound instructions have been validated.">该案例组合了跨区域通行与语义找物；页面展示单次执行，不将其扩展解释为所有未见复合指令均已验证。</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="showcase-subhead">
           <p class="section-index">2026-10-09 / PRECISE OBJECT SEARCH</p>
           <h3 data-zh="小目标精确找物：方向正确，停止仍需改进" data-en="Precise small-object search: correct approach trend, unstable stopping">小目标精确找物：方向正确，停止仍需改进</h3>
           <p data-zh="两段真机视频使用同一条指令寻找白色小型毛绒玩具，并在不同场景中测试接近与停止表现。" data-en="Two real-robot clips use the same instruction to find a small white plush toy, testing approach and stopping behavior in different scenes.">两段真机视频使用同一条指令寻找白色小型毛绒玩具，并在不同场景中测试接近与停止表现。</p>
@@ -150,7 +166,7 @@
         </div>
 
         <div class="showcase-subhead">
-          <p class="section-index">2026-09-30—2026-10-09 / ELEVATOR INTERACTION</p>
+          <p class="section-index">2026-09-30—2026-10-10 / ELEVATOR INTERACTION</p>
           <h3 data-zh="从结构通行扩展到电梯交互" data-en="Extending structured passage to elevator interaction">从结构通行扩展到电梯交互</h3>
           <p data-zh="真机测试覆盖进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹。" data-en="Real-robot tests cover entering, exiting, and selecting a left or right trajectory according to which elevator door opens.">真机测试覆盖进入电梯、驶出电梯，以及根据左右电梯门开启状态生成方向选择轨迹。</p>
         </div>
@@ -192,12 +208,20 @@
               <span class="video-note" data-zh="摄像头中仅能看到较小的电梯开门区域，机器人仍生成进入轨迹并完成进梯。" data-en="Only a small portion of the open elevator doorway is visible to the cameras, yet the robot still generates an entry trajectory and enters the elevator.">摄像头中仅能看到较小的电梯开门区域，机器人仍生成进入轨迹并完成进梯。</span>
             </div>
           </article>
-          <article class="video-card video-card-wide">
+          <article class="video-card">
             <video controls muted playsinline preload="none" poster="media/elevator/posters/entry-additional-02.jpg"><source src="media/elevator/entry-additional-02.mp4" type="video/mp4" /></video>
             <div>
               <p>ELEVATOR · ADDITIONAL ENTRY TRIAL</p>
               <h3 data-zh="补充进电梯执行样例" data-en="Additional elevator-entry trial">补充进电梯执行样例</h3>
               <span class="video-note" data-zh="用于扩充不同开门视觉状态与初始位置下的进梯记录。" data-en="An additional executed entry trial covering another door appearance and initial position.">用于扩充不同开门视觉状态与初始位置下的进梯记录。</span>
+            </div>
+          </article>
+          <article class="video-card">
+            <video controls muted playsinline preload="none" poster="media/elevator/posters/entry-additional-03.jpg"><source src="media/elevator/entry-additional-03.mp4" type="video/mp4" /></video>
+            <div>
+              <p>ELEVATOR · ENTRY TRIAL 03</p>
+              <h3 data-zh="新增进电梯真机样例" data-en="New real-robot elevator-entry case">新增进电梯真机样例</h3>
+              <span class="video-note" data-zh="机器人依据打开的电梯入口生成连续轨迹，并完成从厅外进入轿厢的实际运动。" data-en="The robot generates a continuous trajectory from the open doorway and executes the motion from the hall into the elevator car.">机器人依据打开的电梯入口生成连续轨迹，并完成从厅外进入轿厢的实际运动。</span>
             </div>
           </article>
         </div>
@@ -295,6 +319,13 @@
           <p data-zh="按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。" data-en="A dated record of new scenes, capability tests, and result boundaries as real-robot tasks continue to expand.">按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。</p>
         </div>
         <ol class="timeline-list">
+          <li>
+            <time datetime="2026-10-10">2026-10-10</time>
+            <div>
+              <h3 data-zh="新增未训练复合指令与进梯样例" data-en="Unseen compound instruction and elevator-entry case added">新增未训练复合指令与进梯样例</h3>
+              <p data-zh="加入“前往客厅区域并寻找长白桌”的真机案例；该复合指令未出现在训练数据中。同时补充一条从厅外实际进入电梯的执行视频。" data-en="Added a real-robot case for “go to the living-room area and find the long white table,” an exact compound instruction absent from training, plus another executed elevator-entry video from the hall into the car.">加入“前往客厅区域并寻找长白桌”的真机案例；该复合指令未出现在训练数据中。同时补充一条从厅外实际进入电梯的执行视频。</p>
+            </div>
+          </li>
           <li>
             <time datetime="2026-10-09">2026-10-09</time>
             <div>
