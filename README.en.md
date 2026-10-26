@@ -9,11 +9,18 @@ With a small set of scene-level demonstrations, the system can align spatial con
 ## Current demos
 
 - Indoor cross-area navigation: living room to kitchen.
+- Long-horizon task: leave the bedroom area, follow successive turns through multiple glass doors, and proceed to the living-room sofa. Includes the full extended instruction and real-robot footage at 4× speed.
 - Semantic object search: bed, wooden wardrobe, and water dispenser. The water-dispenser demos include both lights-on and lights-off test scenes; training used only lights-on scene data.
 - Structured passage: moving through an access gate.
 - Unseen compound instruction: executing “go to the living-room area and find the long white table,” which combines cross-area navigation and semantic object search. This is one real-robot execution and is not presented as validation of all unseen instructions.
 - Precise-object exploration: using the same instruction to find a small white plush toy in two scenes. The motion trend points toward the target, but close-range STOP is not yet stable; the effects of target scale and scene texture require more data.
 - Elevator interaction: entering, exiting, and generating a directional trajectory according to which elevator door opens. New exit clips show strong outdoor light and mirror reflections; in one case, the red marker is completely overexposed and unrecognizable, and the robot does not reach it. The left/right selection video validates visual judgment and trajectory selection only; no movement was executed. Current real-robot results remain `10/11` successful entries and `7/10` successful exits; the new showcase clips were not used to recalculate these figures.
+
+## Long-horizon task
+
+[Watch the real-robot replay](https://tangyipeng100.github.io/multiview-vln-showcase/#long-horizon)
+
+> Exit the bedroom area and turn left. Go through the glass door. Turn right and go straight, then pass through the open glass door on your right. Turn right again, keep walking straight. Go through the glass door. Stop in front of the sofa in the living room area.
 
 ## Simulation evaluation
 
@@ -23,6 +30,7 @@ These videos are closed-loop online evaluations after training, not training sam
 
 ## Project timeline
 
+- **2026-10-26**: Added a long-horizon, multi-step real-robot task from the bedroom area through successive turns and glass doors to the living-room sofa, with the full instruction in Chinese and English.
 - **2026-10-12**: Added two real-robot elevator-exit clips under strong outdoor light and mirror reflections. In one, the red marker is completely overexposed and unrecognizable, and the robot fails to reach it.
 - **2026-10-10**: Added a real-robot cross-area object-search case driven by an exact compound instruction absent from training, one executed elevator-entry video, and two elevator-exit clips that stop near the red lobby marker.
 - **2026-10-09**: Added two cross-scene precise small-object search comparisons, elevator entry/exit statistics, and another executed elevator-entry trial.
