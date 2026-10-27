@@ -9,7 +9,7 @@
 ## 当前内容
 
 - 室内跨区域通行：客厅到厨房。
-- 长程任务验证：从卧室区域出发，连续转向、穿过多道玻璃门，前往客厅沙发前；附完整长指令与 4 倍速真机回放。
+- 长程任务验证：从卧室区域出发，连续转向、穿过玻璃门，分别前往客厅沙发和曲线楼梯下的花艺目标；附完整长指令与 4 倍速真机回放。
 - 语义目标寻找：床、木制衣柜、饮水机。其中饮水机包含开灯与未开灯两种测试场景；模型仅使用开灯场景数据训练。
 - 结构化通行：穿越闸机。
 - 未训练复合指令：执行“前往客厅区域并寻找长白桌”，同时组合跨区域通行与语义找物。该条目记录一次真机执行，不将单个案例扩展解释为全部未见指令均已验证。
@@ -24,6 +24,8 @@
 
 > Exit the bedroom area and turn left. Go through the glass door. Turn right and go straight, then pass through the open glass door on your right. Turn right again, keep walking straight. Go through the glass door. Stop in front of the sofa in the living room area.
 
+> Exit the bedroom area and turn left. Go through the glass door. Turn left, and find the large flower arrangement with red anthuriums and purple orchids under the curved staircase.
+
 ## 仿真评测
 
 真机结果之后提供 7 条代表性闭环仿真评测视频，覆盖室外草地绕行/穿越、室内跨区域导航、精确 STOP，以及起始朝向偏转 ±75° 时的恢复能力。仿真视频与真机录像在页面中分区展示，并标注 SPL、终点误差和碰撞数。
@@ -32,6 +34,7 @@
 
 ## 项目时间线
 
+- **2026-10-27**：补充第二条长程多步骤导航真机案例，目标为曲线楼梯下由红色火鹤与紫色兰花组成的大型花艺。
 - **2026-10-26**：新增长程多步骤导航真机案例，展示从卧室区域出发、连续转向与穿门、前往客厅沙发的任务过程，附完整中英文指令。
 - **2026-10-12**：新增两段室外强光与电梯镜面反射条件下的出梯真机视频；其中一段因红色标志点完全过曝不可辨认，机器狗未能到达目标旁。
 - **2026-10-10**：新增一条未在训练数据中出现的跨区域找物复合指令真机案例；补充一条实际进电梯视频，以及两条驶出电梯并在厅外红色标记附近停靠的视频。

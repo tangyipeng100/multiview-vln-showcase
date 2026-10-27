@@ -9,7 +9,7 @@ With a small set of scene-level demonstrations, the system can align spatial con
 ## Current demos
 
 - Indoor cross-area navigation: living room to kitchen.
-- Long-horizon task: leave the bedroom area, follow successive turns through multiple glass doors, and proceed to the living-room sofa. Includes the full extended instruction and real-robot footage at 4× speed.
+- Long-horizon tasks: leave the bedroom area, follow turns through glass doors, and reach either the living-room sofa or the flower arrangement under the curved staircase. Includes the full instructions and real-robot footage at 4× speed.
 - Semantic object search: bed, wooden wardrobe, and water dispenser. The water-dispenser demos include both lights-on and lights-off test scenes; training used only lights-on scene data.
 - Structured passage: moving through an access gate.
 - Unseen compound instruction: executing “go to the living-room area and find the long white table,” which combines cross-area navigation and semantic object search. This is one real-robot execution and is not presented as validation of all unseen instructions.
@@ -22,6 +22,8 @@ With a small set of scene-level demonstrations, the system can align spatial con
 
 > Exit the bedroom area and turn left. Go through the glass door. Turn right and go straight, then pass through the open glass door on your right. Turn right again, keep walking straight. Go through the glass door. Stop in front of the sofa in the living room area.
 
+> Exit the bedroom area and turn left. Go through the glass door. Turn left, and find the large flower arrangement with red anthuriums and purple orchids under the curved staircase.
+
 ## Simulation evaluation
 
 After the real-robot results, the page presents seven representative closed-loop simulation evaluations. They cover outdoor grass bypass/crossing, indoor cross-area navigation, precise STOP, and recovery from initial heading perturbations of ±75°. Simulation footage is clearly separated from real-robot video and includes SPL, final error, and collision counts.
@@ -30,6 +32,7 @@ These videos are closed-loop online evaluations after training, not training sam
 
 ## Project timeline
 
+- **2026-10-27**: Added a second long-horizon, multi-step real-robot task targeting the large flower arrangement with red anthuriums and purple orchids under the curved staircase.
 - **2026-10-26**: Added a long-horizon, multi-step real-robot task from the bedroom area through successive turns and glass doors to the living-room sofa, with the full instruction in Chinese and English.
 - **2026-10-12**: Added two real-robot elevator-exit clips under strong outdoor light and mirror reflections. In one, the red marker is completely overexposed and unrecognizable, and the robot fails to reach it.
 - **2026-10-10**: Added a real-robot cross-area object-search case driven by an exact compound instruction absent from training, one executed elevator-entry video, and two elevator-exit clips that stop near the red lobby marker.
