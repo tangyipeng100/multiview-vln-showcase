@@ -10,6 +10,7 @@ With a small set of scene-level demonstrations, the system can align spatial con
 
 - Indoor cross-area navigation: living room to kitchen.
 - Long-horizon tasks: leave the bedroom area, follow turns through glass doors, and reach either the living-room sofa or the flower arrangement under the curved staircase. Includes the full instructions and real-robot footage at 4× speed.
+- Complex-terrain long-horizon tasks: leave the bathroom area, find a black-and-yellow traffic cone, walk onto a wooden board, and continue toward a second board, using progressively longer instructions.
 - Semantic object search: bed, wooden wardrobe, and water dispenser. The water-dispenser demos include both lights-on and lights-off test scenes; training used only lights-on scene data.
 - Structured passage: moving through an access gate.
 - Unseen compound instruction: executing “go to the living-room area and find the long white table,” which combines cross-area navigation and semantic object search. This is one real-robot execution and is not presented as validation of all unseen instructions.
@@ -32,6 +33,7 @@ These videos are closed-loop online evaluations after training, not training sam
 
 ## Project timeline
 
+- **2026-10-28**: Added three real-robot complex-terrain tasks: find a black-and-yellow traffic cone, walk onto a wooden board, and continue to the second board. [Watch the cases](https://tangyipeng100.github.io/multiview-vln-showcase/#complex-terrain)
 - **2026-10-27**: Added a second long-horizon, multi-step real-robot task targeting the large flower arrangement with red anthuriums and purple orchids under the curved staircase.
 - **2026-10-26**: Added a long-horizon, multi-step real-robot task from the bedroom area through successive turns and glass doors to the living-room sofa, with the full instruction in Chinese and English.
 - **2026-10-12**: Added two real-robot elevator-exit clips under strong outdoor light and mirror reflections. In one, the red marker is completely overexposed and unrecognizable, and the robot fails to reach it.
