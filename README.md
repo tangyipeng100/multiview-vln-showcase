@@ -10,6 +10,7 @@
 
 - 室内跨区域通行：客厅到厨房。
 - 长程任务验证：从卧室区域出发，连续转向、穿过玻璃门并选择路径，分别前往客厅沙发和曲线楼梯下的花艺目标；附完整长指令与加速真机回放。
+- 超过 80 米的长程任务：经过楼梯下的绿植寻找黄色椅子，以及穿过两道木门前往绿灯闸机。[观看案例](https://tangyipeng100.github.io/multiview-vln-showcase/#long-horizon-over-80m)
 - 室内外贯通：穿过左侧玻璃门，沿室外左侧路径前往自动玻璃门。[观看案例](https://tangyipeng100.github.io/multiview-vln-showcase/#indoor-outdoor)
 - 复杂地形长程任务：从卫生间区域出发，寻找黑黄交通锥、走上木板并继续前往第二块木板，展示逐步延长的语义指令与真实地形通行。
 - 语义目标寻找：床、木制衣柜、饮水机。其中饮水机包含开灯与未开灯两种测试场景；模型仅使用开灯场景数据训练。
@@ -36,6 +37,12 @@
 
 > 从左侧的玻璃门走出，选择左侧的路径，走到自动玻璃门前。
 
+超过 80 米的长程任务指令：
+
+> Turn left, walk to the green plant under the staircase and turn right, keep going straight, and find the yellow chair ahead.
+
+> Turn right, keep going straight, pass under the staircase, continue straight, go through the wooden door, keep moving forward, pass through the second wooden door ahead, and stop in front of the green-lit turnstile.
+
 ## 仿真评测
 
 真机结果之后提供 7 条代表性闭环仿真评测视频，覆盖室外草地绕行/穿越、室内跨区域导航、精确 STOP，以及起始朝向偏转 ±75° 时的恢复能力。仿真视频与真机录像在页面中分区展示，并标注 SPL、终点误差和碰撞数。
@@ -44,6 +51,7 @@
 
 ## 项目时间线
 
+- **2026-10-29**：新增两条行走距离超过 80 米的长程真机任务，分别寻找黄色椅子和前往绿灯闸机。
 - **2026-10-29**：新增选择左侧路径寻找楼梯下花艺的长程任务，以及从室内穿过玻璃门、沿室外路径前往自动玻璃门的真机案例。
 - **2026-10-28**：新增三段复杂地形长程任务真机回放，依次展示寻找黑黄交通锥、走上木板和继续前往第二块木板。[观看案例](https://tangyipeng100.github.io/multiview-vln-showcase/#complex-terrain)
 - **2026-10-27**：补充第二条长程多步骤导航真机案例，目标为曲线楼梯下由红色火鹤与紫色兰花组成的大型花艺。

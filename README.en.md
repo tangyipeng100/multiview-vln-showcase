@@ -10,6 +10,7 @@ With a small set of scene-level demonstrations, the system can align spatial con
 
 - Indoor cross-area navigation: living room to kitchen.
 - Long-horizon tasks: leave the bedroom area, follow turns and paths through glass doors, and reach either the living-room sofa or the flower arrangement under the curved staircase. Includes the full instructions and accelerated real-robot footage.
+- Long-horizon tasks over 80 m: find a yellow chair via the plant under the staircase, and reach a green-lit turnstile through two wooden doors. [Watch the cases](https://tangyipeng100.github.io/multiview-vln-showcase/#long-horizon-over-80m)
 - Indoor-to-outdoor navigation: exit through the left glass door, follow the left path outside, and move toward an automatic glass door. [Watch the case](https://tangyipeng100.github.io/multiview-vln-showcase/#indoor-outdoor)
 - Complex-terrain long-horizon tasks: leave the bathroom area, find a black-and-yellow traffic cone, walk onto a wooden board, and continue toward a second board, using progressively longer instructions.
 - Semantic object search: bed, wooden wardrobe, and water dispenser. The water-dispenser demos include both lights-on and lights-off test scenes; training used only lights-on scene data.
@@ -32,6 +33,12 @@ Indoor-to-outdoor instruction:
 
 > Walk out of the glass door on your left, choose the path on your left, and walk to the automatic glass door.
 
+Long-horizon instructions over 80 m:
+
+> Turn left, walk to the green plant under the staircase and turn right, keep going straight, and find the yellow chair ahead.
+
+> Turn right, keep going straight, pass under the staircase, continue straight, go through the wooden door, keep moving forward, pass through the second wooden door ahead, and stop in front of the green-lit turnstile.
+
 ## Simulation evaluation
 
 After the real-robot results, the page presents seven representative closed-loop simulation evaluations. They cover outdoor grass bypass/crossing, indoor cross-area navigation, precise STOP, and recovery from initial heading perturbations of ±75°. Simulation footage is clearly separated from real-robot video and includes SPL, final error, and collision counts.
@@ -40,6 +47,7 @@ These videos are closed-loop online evaluations after training, not training sam
 
 ## Project timeline
 
+- **2026-10-29**: Added two real-robot long-horizon tasks over 80 m, targeting a yellow chair and a green-lit turnstile.
 - **2026-10-29**: Added a long-horizon flower-search task using the left path and an indoor–outdoor navigation case through glass doors toward an automatic glass door.
 - **2026-10-28**: Added three real-robot complex-terrain tasks: find a black-and-yellow traffic cone, walk onto a wooden board, and continue to the second board. [Watch the cases](https://tangyipeng100.github.io/multiview-vln-showcase/#complex-terrain)
 - **2026-10-27**: Added a second long-horizon, multi-step real-robot task targeting the large flower arrangement with red anthuriums and purple orchids under the curved staircase.
