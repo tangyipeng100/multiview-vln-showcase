@@ -10,6 +10,7 @@ With a small set of scene-level demonstrations, the system can align spatial con
 
 - Indoor cross-area navigation: living room to kitchen.
 - Long-horizon tasks: leave the bedroom area, follow turns and paths through glass doors, and reach either the living-room sofa or the flower arrangement under the curved staircase. Includes the full instructions and accelerated real-robot footage.
+- Long instructions and scene constraints: pass the China Mobile culture wall, select the warm-lit frameless doorway, and proceed past the elevators toward a brown leather sofa. [Watch the case](https://tangyipeng100.github.io/multiview-vln-showcase/#culture-wall-sofa)
 - Long-horizon tasks over 80 m: find a yellow chair via the plant under the staircase, and reach a green-lit turnstile through two wooden doors. [Watch the cases](https://tangyipeng100.github.io/multiview-vln-showcase/#long-horizon-over-80m)
 - Indoor-to-outdoor navigation: exit through the left glass door, follow the left path outside, and move toward an automatic glass door. [Watch the case](https://tangyipeng100.github.io/multiview-vln-showcase/#indoor-outdoor)
 - Complex-terrain long-horizon tasks: leave the bathroom area, find a black-and-yellow traffic cone, walk onto a wooden board, and continue toward a second board, using progressively longer instructions.
@@ -47,6 +48,7 @@ These videos are closed-loop online evaluations after training, not training sam
 
 ## Project timeline
 
+- **2026-11-04**: Added a long-horizon real-robot replay past the culture wall, a warm-lit frameless doorway and elevators toward a brown leather sofa.
 - **2026-10-29**: Added two real-robot long-horizon tasks over 80 m, targeting a yellow chair and a green-lit turnstile.
 - **2026-10-29**: Added a long-horizon flower-search task using the left path and an indoor–outdoor navigation case through glass doors toward an automatic glass door.
 - **2026-10-28**: Added three real-robot complex-terrain tasks: find a black-and-yellow traffic cone, walk onto a wooden board, and continue to the second board. [Watch the cases](https://tangyipeng100.github.io/multiview-vln-showcase/#complex-terrain)
