@@ -42,12 +42,15 @@ Long-horizon instructions over 80 m:
 
 ## Simulation evaluation
 
+Four Real2Sim evaluation replays show a model trained on real-world scene data and evaluated in InteriaGS, navigating among bedroom, bathroom, living-room, and kitchen targets. [Watch the Real2Sim cases](https://tangyipeng100.github.io/multiview-vln-showcase/#real2sim)
+
 After the real-robot results, the page presents seven representative closed-loop simulation evaluations. They cover outdoor grass bypass/crossing, indoor cross-area navigation, precise STOP, and recovery from initial heading perturbations of ±75°. Simulation footage is clearly separated from real-robot video and includes SPL, final error, and collision counts.
 
 These videos are closed-loop online evaluations after training, not training samples. The model continuously predicts local waypoints and STOP while the controller executes those predictions.
 
 ## Project timeline
 
+- **2026-11-11**: Added four Real2Sim indoor cross-area navigation replays, trained on real-world scene data and evaluated in InteriaGS.
 - **2026-11-04**: Added a long-horizon real-robot replay past the culture wall, a warm-lit frameless doorway and elevators toward a brown leather sofa.
 - **2026-10-29**: Added two real-robot long-horizon tasks over 80 m, targeting a yellow chair and a green-lit turnstile.
 - **2026-10-29**: Added a long-horizon flower-search task using the left path and an indoor–outdoor navigation case through glass doors toward an automatic glass door.

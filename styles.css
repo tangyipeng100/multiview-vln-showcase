@@ -100,6 +100,7 @@ section { scroll-margin-top: 4.5rem; }
 .simulation-grid-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .simulation-card { min-width: 0; border: 1px solid var(--line-dark); background: #101718; }
 .simulation-card video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #000; }
+.real2sim-grid .simulation-card video { aspect-ratio: 181 / 68; }
 .simulation-body { padding: 1.2rem; }
 .simulation-body h3 { margin-top: 0.45rem; font-size: 1.15rem; line-height: 1.4; }
 .instruction { min-height: 4.7rem; margin-top: 0.9rem; color: rgba(255, 255, 255, 0.5); font-family: Georgia, "Times New Roman", serif; font-size: 0.82rem; line-height: 1.55; overflow-wrap: anywhere; }

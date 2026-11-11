@@ -369,12 +369,51 @@
         <div class="section-head">
           <p class="section-index">03 / CLOSED-LOOP SIMULATION</p>
           <h2 data-zh="闭环仿真评测" data-en="Closed-loop simulation evaluation">闭环仿真评测</h2>
-          <p data-zh="以下 7 条均为成功完成并主动 STOP 的仿真器闭环在线评测，不是真机录像或训练样本。模型依据语言指令与多视图视觉观测持续预测局部航点和 STOP，控制器实际执行预测结果。" data-en="All seven cases below are successful closed-loop online simulation evaluations with an active STOP, not real-robot footage or training samples. The model continuously predicts local waypoints and STOP from language instructions and multi-view observations, while the controller executes those predictions.">以下 7 条均为成功完成并主动 STOP 的仿真器闭环在线评测，不是真机录像或训练样本。模型依据语言指令与多视图视觉观测持续预测局部航点和 STOP，控制器实际执行预测结果。</p>
+          <p data-zh="展示模型在仿真场景中的导航评测，包括使用真实场景数据训练、在 InteriaGS 中评测的 Real2Sim 案例，以及其他闭环仿真结果。" data-en="Navigation evaluations in simulated environments, including Real2Sim cases trained on real-world scene data and evaluated in InteriaGS, alongside other closed-loop simulation results.">展示模型在仿真场景中的导航评测，包括使用真实场景数据训练、在 InteriaGS 中评测的 Real2Sim 案例，以及其他闭环仿真结果。</p>
+        </div>
+
+        <div id="real2sim" class="simulation-label simulation-label-spaced">
+          <span>REAL2SIM · INTERIAGS</span>
+          <p data-zh="真实场景数据训练 · InteriaGS 仿真评测" data-en="Trained on real-world scene data · evaluated in InteriaGS">真实场景数据训练 · InteriaGS 仿真评测</p>
+        </div>
+        <div class="simulation-grid real2sim-grid">
+          <article class="simulation-card">
+            <video controls muted playsinline preload="none" poster="media/simulation/real2sim/posters/bed-to-toilet.jpg"><source src="media/simulation/real2sim/bed-to-toilet.mp4" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">IGS_0012_840878 · TRAJ_000014</p>
+              <h3 data-zh="卧室的床 → 卫生间的马桶" data-en="Bedroom bed → bathroom toilet">卧室的床 → 卫生间的马桶</h3>
+              <p class="instruction" data-zh="从卧室的床到卫生间的马桶。" data-en="From bed in the bedroom to the toilet in the bathroom.">从卧室的床到卫生间的马桶。</p>
+            </div>
+          </article>
+          <article class="simulation-card">
+            <video controls muted playsinline preload="none" poster="media/simulation/real2sim/posters/bed-to-living-sofa.jpg"><source src="media/simulation/real2sim/bed-to-living-sofa.mp4" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">IGS_0012_840878 · TRAJ_000016</p>
+              <h3 data-zh="卧室的床 → 客厅多人沙发" data-en="Bedroom bed → living-room sofa">卧室的床 → 客厅多人沙发</h3>
+              <p class="instruction" data-zh="从卧室的床到客厅的多人沙发。" data-en="From bed in the bedroom to the Multi person sofa in the living room.">从卧室的床到客厅的多人沙发。</p>
+            </div>
+          </article>
+          <article class="simulation-card">
+            <video controls muted playsinline preload="none" poster="media/simulation/real2sim/posters/sofa-to-refrigerator.jpg"><source src="media/simulation/real2sim/sofa-to-refrigerator.mp4" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">IGS_0015_840888 · TRAJ_000003</p>
+              <h3 data-zh="客厅多人沙发 → 厨房冰箱" data-en="Living-room sofa → kitchen refrigerator">客厅多人沙发 → 厨房冰箱</h3>
+              <p class="instruction" data-zh="从客厅的多人沙发到厨房的冰箱。" data-en="From trhe multi person sofa in the living room to the refrigerator in the kitchen.">从客厅的多人沙发到厨房的冰箱。</p>
+            </div>
+          </article>
+          <article class="simulation-card">
+            <video controls muted playsinline preload="none" poster="media/simulation/real2sim/posters/sofa-to-master-bed.jpg"><source src="media/simulation/real2sim/sofa-to-master-bed.mp4" type="video/mp4" /></video>
+            <div class="simulation-body">
+              <p class="video-type">IGS_0237_840850 · TRAJ_000027</p>
+              <h3 data-zh="客厅多人沙发 → 主卧的床" data-en="Living-room sofa → master-bedroom bed">客厅多人沙发 → 主卧的床</h3>
+              <p class="instruction" data-zh="从客厅的多人沙发到主卧的床，主卧位于面对卫生间时的右侧。" data-en="From Multi person sofa in the living room to the bed in the master bedroom on the right side when facing the bathroom.">从客厅的多人沙发到主卧的床，主卧位于面对卫生间时的右侧。</p>
+            </div>
+          </article>
         </div>
 
         <div class="simulation-label">
           <span data-zh="仿真结果" data-en="SIMULATION RESULT">仿真结果</span>
-          <p data-zh="室外语义路线：绕行与穿越" data-en="Outdoor semantic routes: bypassing and crossing">室外语义路线：绕行与穿越</p>
+          <p data-zh="其余 7 条为成功完成并主动 STOP 的闭环评测。室外语义路线：绕行与穿越" data-en="The following seven cases are successful closed-loop evaluations with an active STOP. Outdoor semantic routes: bypassing and crossing">其余 7 条为成功完成并主动 STOP 的闭环评测。室外语义路线：绕行与穿越</p>
         </div>
         <div class="simulation-grid simulation-grid-three">
           <article class="simulation-card">
@@ -457,6 +496,13 @@
           <p data-zh="按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。" data-en="A dated record of new scenes, capability tests, and result boundaries as real-robot tasks continue to expand.">按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。</p>
         </div>
         <ol class="timeline-list">
+          <li>
+            <time datetime="2026-11-11">2026-11-11</time>
+            <div>
+              <h3 data-zh="新增 Real2Sim 室内跨区域评测" data-en="Added Real2Sim indoor cross-area evaluations">新增 Real2Sim 室内跨区域评测</h3>
+              <p data-zh="加入四段使用真实场景数据训练、在 InteriaGS 中评测的模型回放，覆盖卧室、卫生间、客厅和厨房之间的目标导航。" data-en="Added four model-evaluation replays trained on real-world scene data and evaluated in InteriaGS, covering navigation among bedroom, bathroom, living room, and kitchen targets.">加入四段使用真实场景数据训练、在 InteriaGS 中评测的模型回放，覆盖卧室、卫生间、客厅和厨房之间的目标导航。</p>
+            </div>
+          </li>
           <li>
             <time datetime="2026-11-04">2026-11-04</time>
             <div>
