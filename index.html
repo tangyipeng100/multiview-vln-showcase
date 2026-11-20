@@ -196,6 +196,15 @@
             <span class="video-note" data-zh="从左侧的玻璃门走出，选择左侧的路径，走到自动玻璃门前。" data-en="Walk out of the glass door on your left, choose the path on your left, and walk to the automatic glass door.">从左侧的玻璃门走出，选择左侧的路径，走到自动玻璃门前。</span>
           </div>
         </article>
+        <article id="few-shot-indoor-outdoor" class="video-card long-horizon-video">
+          <video controls muted playsinline preload="none" poster="media/long-horizon/posters/few-shot-stairs-to-manhole.jpg"><source src="media/long-horizon/few-shot-stairs-to-manhole.mp4" type="video/mp4" /></video>
+          <div>
+            <p>FEW-SHOT · 10 DEMONSTRATIONS · REAL ROBOT · 4×</p>
+            <h3 data-zh="少样本微调：从室内楼梯到室外井盖" data-en="Few-shot fine-tuning: indoor stairs to outdoor manhole">少样本微调：从室内楼梯到室外井盖</h3>
+            <span class="video-note" data-zh="仅采集 10 条数据进行微调。本案例展示机器人在室内外强光与亮度变化条件下，穿过闸机和玻璃门并沿室外步道行进，体现少样本微调在该场景中的泛化表现。" data-en="Fine-tuned on only 10 collected demonstrations. This case shows the robot passing through a turnstile and glass doors and following an outdoor walkway under strong light and changing brightness, illustrating few-shot generalization in this setting.">仅采集 10 条数据进行微调。本案例展示机器人在室内外强光与亮度变化条件下，穿过闸机和玻璃门并沿室外步道行进，体现少样本微调在该场景中的泛化表现。</span>
+            <span class="video-note" data-zh="指令：从室内楼梯旁出发，穿过闸机，经玻璃门走到室外，沿铺装步道前进，在圆形井盖附近停下。" data-en="Instruction: Start by the indoor stairs, pass through the turnstile, exit through the glass doors, and follow the paved outdoor walkway to stop near the round manhole cover.">指令：从室内楼梯旁出发，穿过闸机，经玻璃门走到室外，沿铺装步道前进，在圆形井盖附近停下。</span>
+          </div>
+        </article>
 
         <div id="complex-terrain" class="showcase-subhead">
           <p class="section-index">2026-10-28 / COMPLEX TERRAIN</p>
@@ -496,6 +505,13 @@
           <p data-zh="按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。" data-en="A dated record of new scenes, capability tests, and result boundaries as real-robot tasks continue to expand.">按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。</p>
         </div>
         <ol class="timeline-list">
+          <li>
+            <time datetime="2026-11-20">2026-11-20</time>
+            <div>
+              <h3 data-zh="新增 10 条数据微调的室内外贯通案例" data-en="Added a 10-demonstration indoor–outdoor case">新增 10 条数据微调的室内外贯通案例</h3>
+              <p data-zh="使用 10 条采集数据进行微调，展示机器人在强光与室内外亮度变化条件下经过闸机、玻璃门并沿室外步道前进的真机回放。" data-en="Added a real-robot replay after fine-tuning on 10 collected demonstrations, showing passage through a turnstile and glass doors onto an outdoor walkway under strong light and changing brightness.">使用 10 条采集数据进行微调，展示机器人在强光与室内外亮度变化条件下经过闸机、玻璃门并沿室外步道前进的真机回放。</p>
+            </div>
+          </li>
           <li>
             <time datetime="2026-11-11">2026-11-11</time>
             <div>
