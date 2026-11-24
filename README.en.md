@@ -14,6 +14,7 @@ With a small set of scene-level demonstrations, the system can align spatial con
 - Long-horizon tasks over 80 m: find a yellow chair via the plant under the staircase, and reach a green-lit turnstile through two wooden doors. [Watch the cases](https://tangyipeng100.github.io/multiview-vln-showcase/#long-horizon-over-80m)
 - Indoor-to-outdoor navigation: exit through the left glass door, follow the left path outside, and move toward an automatic glass door. [Watch the case](https://tangyipeng100.github.io/multiview-vln-showcase/#indoor-outdoor)
 - Few-shot indoor-to-outdoor navigation: fine-tuned on 10 collected demonstrations, with a real-robot case from indoor stairs through a turnstile and glass doors toward an outdoor manhole under strong light and changing brightness. [Watch the case](https://tangyipeng100.github.io/multiview-vln-showcase/#few-shot-indoor-outdoor)
+- Few-shot outdoor-to-indoor navigation: fine-tuned on 13 demonstrations, entering through the left glass entrance toward an indoor umbrella rack. [Watch the case](https://tangyipeng100.github.io/multiview-vln-showcase/#few-shot-outdoor-indoor)
 - Complex-terrain long-horizon tasks: leave the bathroom area, find a black-and-yellow traffic cone, walk onto a wooden board, and continue toward a second board, using progressively longer instructions.
 - Semantic object search: bed, wooden wardrobe, and water dispenser. The water-dispenser demos include both lights-on and lights-off test scenes; training used only lights-on scene data.
 - Structured passage: moving through an access gate.
@@ -51,6 +52,7 @@ These videos are closed-loop online evaluations after training, not training sam
 
 ## Project timeline
 
+- **2026-11-24**: Added a real-robot outdoor-to-indoor navigation case targeting an umbrella rack after fine-tuning on 13 demonstrations.
 - **2026-11-20**: Added a real-robot indoor-to-outdoor case after fine-tuning on 10 collected demonstrations, illustrating few-shot performance under strong light and changing brightness.
 - **2026-11-11**: Added four Real2Sim indoor cross-area navigation replays, trained on real-world scene data and evaluated in InteriaGS.
 - **2026-11-04**: Added a long-horizon real-robot replay past the culture wall, a warm-lit frameless doorway and elevators toward a brown leather sofa.

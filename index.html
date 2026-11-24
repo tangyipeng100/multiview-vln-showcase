@@ -186,7 +186,7 @@
         <div id="indoor-outdoor" class="showcase-subhead">
           <p class="section-index">2026-10-29 / INDOOR–OUTDOOR NAVIGATION</p>
           <h3 data-zh="室内外贯通：从玻璃门走向室外" data-en="Indoor-to-outdoor navigation through glass doors">室内外贯通：从玻璃门走向室外</h3>
-          <p data-zh="机器人从室内穿过玻璃门，选择左侧路径，沿室外通道前往自动玻璃门。视频为 3 倍速真机回放。" data-en="The robot passes through a glass door, follows the left path outside, and moves toward an automatic glass door. Real-robot footage is shown at 3× speed.">机器人从室内穿过玻璃门，选择左侧路径，沿室外通道前往自动玻璃门。视频为 3 倍速真机回放。</p>
+          <p data-zh="真机案例展示穿越玻璃门的室内外通行，以及少量数据微调后的跨区域导航。" data-en="Real-robot cases show indoor–outdoor passage through glass doors and cross-area navigation after fine-tuning on small datasets.">真机案例展示穿越玻璃门的室内外通行，以及少量数据微调后的跨区域导航。</p>
         </div>
         <article class="video-card long-horizon-video">
           <video controls muted playsinline preload="none" poster="media/long-horizon/posters/indoor-outdoor-glass-door.jpg"><source src="media/long-horizon/indoor-outdoor-glass-door.mp4" type="video/mp4" /></video>
@@ -203,6 +203,16 @@
             <h3 data-zh="少样本微调：从室内楼梯到室外井盖" data-en="Few-shot fine-tuning: indoor stairs to outdoor manhole">少样本微调：从室内楼梯到室外井盖</h3>
             <span class="video-note" data-zh="仅采集 10 条数据进行微调。本案例展示机器人在室内外强光与亮度变化条件下，穿过闸机和玻璃门并沿室外步道行进，体现少样本微调在该场景中的泛化表现。" data-en="Fine-tuned on only 10 collected demonstrations. This case shows the robot passing through a turnstile and glass doors and following an outdoor walkway under strong light and changing brightness, illustrating few-shot generalization in this setting.">仅采集 10 条数据进行微调。本案例展示机器人在室内外强光与亮度变化条件下，穿过闸机和玻璃门并沿室外步道行进，体现少样本微调在该场景中的泛化表现。</span>
             <span class="video-note" data-zh="指令：从室内楼梯旁出发，穿过闸机，经玻璃门走到室外，沿铺装步道前进，在圆形井盖附近停下。" data-en="Instruction: Start by the indoor stairs, pass through the turnstile, exit through the glass doors, and follow the paved outdoor walkway to stop near the round manhole cover.">指令：从室内楼梯旁出发，穿过闸机，经玻璃门走到室外，沿铺装步道前进，在圆形井盖附近停下。</span>
+          </div>
+        </article>
+
+        <article id="few-shot-outdoor-indoor" class="video-card long-horizon-video">
+          <video controls muted playsinline preload="none" poster="media/long-horizon/posters/few-shot-outdoor-umbrella-rack.jpg"><source src="media/long-horizon/few-shot-outdoor-umbrella-rack.mp4" type="video/mp4" /></video>
+          <div>
+            <p>FEW-SHOT · 13 DEMONSTRATIONS · REAL ROBOT · 4×</p>
+            <h3 data-zh="少样本微调：从室外进入室内" data-en="Few-shot fine-tuning: outdoors to indoors">少样本微调：从室外进入室内</h3>
+            <span class="video-note" data-zh="使用 13 条数据微调，展示机器人从室外穿过左侧玻璃入口进入室内、前往雨伞架附近的真机回放。" data-en="Fine-tuned on 13 demonstrations, this real-robot replay shows the robot entering from outdoors through the left glass entrance and moving toward the umbrella rack inside.">使用 13 条数据微调，展示机器人从室外穿过左侧玻璃入口进入室内、前往雨伞架附近的真机回放。</span>
+            <span class="video-note" data-zh="指令：从左侧玻璃入口门进入，在室内雨伞架旁停下。" data-en="Instruction: Go through the glass entrance doors on the left and stop beside the umbrella rack inside.">指令：从左侧玻璃入口门进入，在室内雨伞架旁停下。</span>
           </div>
         </article>
 
@@ -505,6 +515,13 @@
           <p data-zh="按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。" data-en="A dated record of new scenes, capability tests, and result boundaries as real-robot tasks continue to expand.">按时间记录新增场景、能力验证与结果边界，持续补充真实机器人任务。</p>
         </div>
         <ol class="timeline-list">
+          <li>
+            <time datetime="2026-11-24">2026-11-24</time>
+            <div>
+              <h3 data-zh="新增 13 条数据微调的室外到室内案例" data-en="Added an outdoor-to-indoor case fine-tuned on 13 demonstrations">新增 13 条数据微调的室外到室内案例</h3>
+              <p data-zh="使用 13 条数据微调，展示机器人从室外穿过玻璃入口进入室内、前往雨伞架附近的真机回放。" data-en="Added a real-robot replay after fine-tuning on 13 demonstrations, showing entry from outdoors through glass doors toward an indoor umbrella rack.">使用 13 条数据微调，展示机器人从室外穿过玻璃入口进入室内、前往雨伞架附近的真机回放。</p>
+            </div>
+          </li>
           <li>
             <time datetime="2026-11-20">2026-11-20</time>
             <div>
